@@ -47,7 +47,7 @@ const Todo = () => {
     const item_todo_edited = items.find((curElem) => {
       return curElem.id === index;
     });
-    setInputData(item_todo_edited);
+    setInputData(item_todo_edited.name);
     setIsEditItem(index);
     setToggleButton(true);
   };
